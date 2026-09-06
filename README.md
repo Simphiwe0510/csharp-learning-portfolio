@@ -1,47 +1,29 @@
-# C# Learning Portfolio
+# Hourly Worker OOP — C# / .NET 8
 
-Welcome to my C# learning portfolio.
+A C# console application built to practise object-oriented programming and core programming fundamentals.
 
-This repository contains projects and practical exercises that demonstrate the C# programming skills I have developed through academic study and continued practice.
+## Project focus
 
-## Skills Demonstrated
+This project demonstrates:
 
-- Object-Oriented Programming (OOP)
-- Classes and objects
-- Inheritance
 - Abstraction
-- Method overriding
-- Exception handling
-- Data validation
-- Console applications
-- Problem-solving with C#
-
-## Projects
-
-### 1. Hourly Worker OOP
-
-A console application that demonstrates object-oriented programming using an abstract `Worker` class and an `HourlyWorker` derived class.
-
-The project demonstrates:
-
-- Abstract classes and methods
 - Inheritance
 - Method overriding
 - Constructor validation
 - Exception handling
-- Pay calculation
-- Formatted output
+- Hourly pay calculations
 
- [View Hourly Worker OOP Project](./HourlyWorkerOOP)
-
-## Technologies
+## Technology
 
 - C#
 - .NET 8
-- Visual Studio Code
-- Git
-- GitHub
+- Object-oriented programming
+- Console application
 
-## Portfolio Development
+## Scope
 
-This repository will continue to grow as I add more C# projects and strengthen my programming, software development, and problem-solving skills.
+This is a learning project that supports my C# and programming fundamentals. It is not presented as a Data Engineering project.
+
+## Related portfolio
+
+[View the full portfolio](https://simphiwe0510.github.io/simphiwe-portfolio/)
