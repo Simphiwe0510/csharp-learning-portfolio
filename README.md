@@ -1,36 +1,29 @@
 # C# Learning Portfolio | University of Johannesburg
 
-I'm an Information Systems student at the University of Johannesburg. This repository records my **C# learning journey through 2025**, with original coursework projects and an emphasis on understanding, not just collecting files.
+Welcome! I'm an Information Systems student at the University of Johannesburg documenting my **2025 C# programming learning journey**. This repository presents coursework I wrote, along with clearly identified documentation and compatibility improvements.
 
-## What is currently published
+## Explore the projects
 
-### [HourlyWorkerOOP](HourlyWorkerOOP/)
+| Project | Learning concepts | Status |
+| --- | --- | --- |
+| [HourlyWorkerOOP](HourlyWorkerOOP/) | Abstract classes, inheritance, pay calculations, validation | Original project; .NET 8 build passed |
+| [Tutorial 02 — Array Search](01-Programming-Fundamentals/Tutorial-02/Question-01/) | Arrays, random numbers, loops and linear search | Original source published; build verification in progress |
+| [Tutorial 06 — Book and TextBook](02-Object-Oriented-Programming/Tutorial-06/Question-01/) | Constructors, classes, inheritance, method overriding | Original source published; known issue documented |
 
-A C# console application using .NET 8. This learning project explores:
+The broader submitted coursework covers string operations, exception handling, file manipulation and Windows Forms, but **the other 20 projects are not yet published**.
 
-- Classes and objects
-- Abstract classes and inheritance
-- Method overriding
-- Constructor validation
-- Exception handling
-- Calculating hourly pay
+## [Learning roadmap](LEARNING_ROADMAP.md) · [Project index](PROJECT_INDEX.md) · [Release notes](RELEASE_NOTES.md)
 
-Open the project directory to inspect the original source code and solution files.
+## Tools and technologies
 
-## Learning progression
+C# · .NET · Visual Studio · GitHub Actions
 
-My broader 2025 coursework covers programming fundamentals, arrays and strings, object-oriented design, error handling, file operations and Windows Forms. **The additional coursework projects are being reviewed and will be added only after source and privacy checks.** This statement does not imply that those projects are already in the repository.
+## Running the exercises
 
-## Tools
+The listed projects have individual README files. Use an appropriate .NET SDK and run `dotnet build` followed by `dotnet run` for console applications. Some exercises use `Console.ReadKey()` and need an interactive terminal.
 
-C# · .NET · Visual Studio
+Build checks are automated for the published projects. A successful build does **not** mean all possible inputs or program behaviors have been tested.
 
-## Running the published application
+## Academic integrity
 
-Open `HourlyWorkerOOP/AbstractWorker.sln` in Visual Studio with .NET 8 installed. Build and run the console application. **A fresh build has not been independently verified as part of this portfolio review.**
-
-## Integrity and transparency
-
-This is an educational portfolio, not a claim of commercial or production experience. I wrote my original coursework solutions; the repository organization and documentation are being improved with AI assistance. Lecturer handouts and assessment questions are not presented as my own original work. Any future project additions will be documented honestly, with verified build results where available.
-
-[Visit my wider portfolio](https://simphiwe0510.github.io/simphiwe-portfolio/)
+All original coursework solutions are distinguished from added documentation and project compatibility files prepared with AI assistance. No company employment, professional certifications, or production-level experience are claimed. Lecturer handouts and assessment instructions are not presented as personally authored source code.
