@@ -8,9 +8,10 @@ Welcome! I'm an Information Systems student at the University of Johannesburg do
 | --- | --- | --- |
 | [HourlyWorkerOOP](HourlyWorkerOOP/) | Abstract classes, inheritance, pay calculations, validation | Original project; .NET 8 build passed |
 | [Tutorial 02 — Array Search](01-Programming-Fundamentals/Tutorial-02/Question-01/) | Arrays, random numbers, loops and linear search | Original source published; build verification in progress |
+| [Tutorial 06 — Vehicle and Car](02-Object-Oriented-Programming/Tutorial-06/Question-02/) | Base and derived classes, overriding | Source published; build verification in progress |
 | [Tutorial 06 — Book and TextBook](02-Object-Oriented-Programming/Tutorial-06/Question-01/) | Constructors, classes, inheritance, method overriding | Original source published; known issue documented |
 
-The broader submitted coursework covers string operations, exception handling, file manipulation and Windows Forms, but **the other 20 projects are not yet published**.
+The broader submitted coursework covers string operations, exception handling, file manipulation and Windows Forms, but **the other 19 projects are not yet published**.
 
 ## [Learning roadmap](LEARNING_ROADMAP.md) · [Project index](PROJECT_INDEX.md) · [Release notes](RELEASE_NOTES.md)
 
