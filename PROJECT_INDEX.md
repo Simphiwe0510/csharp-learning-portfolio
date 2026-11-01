@@ -1,26 +1,19 @@
-# C# Project Index — Review Status
+# C# Learning Portfolio — Project Index
 
-This index describes the **student-source projects identified in my 2025 UJ coursework collection**, not a claim that every project has been published or build-tested. Three projects are now included on the review branch: the existing [HourlyWorkerOOP](HourlyWorkerOOP/) and two original coursework exercises. These updates have not yet been merged into main.
+This index distinguishes **published source** from projects still in the uploaded coursework archive.
 
-| Group | Identified projects | Source status |
-|---|---:|---|
-| Tutorial 2: programming fundamentals | 3 | [Question 1](01-Programming-Fundamentals/Tutorial-02/Question-01/) uploaded; 2 pending |
-| Tutorial 6: classes and inheritance | 5 | [Question 1](02-Object-Oriented-Programming/Tutorial-06/Question-01/) uploaded with known issues; 4 pending |
-| Formative 4: object-oriented programming | 1 | Pending publication and build review |
-| Formative 5: exceptions | 1 | Pending publication and build review |
-| Tutorial 8: exception handling | 4 | Pending publication and build review |
-| Tutorial 9: file handling | 3 | Pending publication and build review |
-| Tutorial 10: Windows Forms | 2 | Pending publication and build review |
-| Summative practical collection | 3 | Pending publication and build review |
-| HourlyWorkerOOP | 1 | [Published](HourlyWorkerOOP/), GitHub Actions build passed |
-| **Total** | **23** | **3 included on review branch, 20 pending** |
+## Currently in the review branch
 
-## Quality policy
+| Project | What it teaches | Verification |
+| --- | --- | --- |
+| [HourlyWorkerOOP](HourlyWorkerOOP/) | Abstraction, inheritance, pay calculations, exception handling | Passed GitHub Actions .NET 8 build previously |
+| [Tutorial 02 — Question 1](01-Programming-Fundamentals/Tutorial-02/Question-01/) | Arrays, random numbers, sequential search, loops | Build scheduled on GitHub Actions |
+| [Tutorial 06 — Question 1](02-Object-Oriented-Programming/Tutorial-06/Question-01/) | Classes, constructors, inheritance, method overriding | Build scheduled on GitHub Actions; known original code issue documented |
 
-* Preserve original student-created code; document changes and fixes rather than disguising them.
-* Do not publish lecturer PDFs, test papers, or unrelated coursework as original code.
-* Exclude build outputs, user files, student identifiers, and secrets.
-* Verify Windows Forms projects on a compatible Windows machine; do not mislabel them as cross-platform.
-* Never claim a project compiles until a build has actually passed.
+## Other uploaded coursework
 
-This index was prepared with AI-assisted documentation and is based on an audit of the submitted source ZIPs.
+An offline archive audit identified 23 Visual Studio projects in total. **20 projects remain unpublished** while compatibility, content and privacy reviews continue. The submitted tutorials cover fundamentals, OOP, exceptions, file operations and Windows Forms. This is an educational portfolio, not a claim of professional software delivery.
+
+Original student `.cs` coursework is preserved, while new SDK-style project files and documentation are identified as portfolio preparation work.
+
+Please do not assume any program is fully tested based only on a successful compilation; input handling and GUI behavior require runtime testing.
