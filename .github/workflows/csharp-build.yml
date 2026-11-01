@@ -1,26 +1,25 @@
-name: C# existing project build
-
+name: C# coursework build verification
 on:
   push:
     branches: [main, portfolio-2025-reviewed]
   pull_request:
     branches: [main]
-
 jobs:
-  build-hourly-worker:
-    name: Build HourlyWorkerOOP (.NET 8)
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - HourlyWorkerOOP/AbstractWorker.csproj
+          - 01-Programming-Fundamentals/Tutorial-02/Question-01/Question01.csproj
+          - 02-Object-Oriented-Programming/Tutorial-06/Question-01/Question01.csproj
     steps:
       - uses: actions/checkout@v4
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
       - name: Restore
-        run: dotnet restore HourlyWorkerOOP/AbstractWorker.csproj
+        run: dotnet restore "${{ matrix.project }}"
       - name: Build
-        run: dotnet build HourlyWorkerOOP/AbstractWorker.csproj --no-restore --configuration Release
-      - name: Build original Tutorial 02 exercise
-        run: dotnet build 01-Programming-Fundamentals/Tutorial-02/Question-01/Question01.csproj --configuration Release
-      - name: Build original Tutorial 06 inheritance exercise
-        run: dotnet build 02-Object-Oriented-Programming/Tutorial-06/Question-01/Question01.csproj --configuration Release
+        run: dotnet build "${{ matrix.project }}" --no-restore --configuration Release
