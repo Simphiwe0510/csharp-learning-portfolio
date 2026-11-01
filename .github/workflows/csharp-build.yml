@@ -20,3 +20,7 @@ jobs:
         run: dotnet restore HourlyWorkerOOP/AbstractWorker.csproj
       - name: Build
         run: dotnet build HourlyWorkerOOP/AbstractWorker.csproj --no-restore --configuration Release
+      - name: Build original Tutorial 02 exercise
+        run: dotnet build 01-Programming-Fundamentals/Tutorial-02/Question-01/Question01.csproj --configuration Release
+      - name: Build original Tutorial 06 inheritance exercise
+        run: dotnet build 02-Object-Oriented-Programming/Tutorial-06/Question-01/Question01.csproj --configuration Release
