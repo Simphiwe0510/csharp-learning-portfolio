@@ -1,0 +1,22 @@
+name: C# existing project build
+
+on:
+  push:
+    branches: [main, portfolio-2025-reviewed]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-hourly-worker:
+    name: Build HourlyWorkerOOP (.NET 8)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore
+        run: dotnet restore HourlyWorkerOOP/AbstractWorker.csproj
+      - name: Build
+        run: dotnet build HourlyWorkerOOP/AbstractWorker.csproj --no-restore --configuration Release
