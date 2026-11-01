@@ -1,23 +1,18 @@
-# Release Notes / Quality Gates
+# Release Notes — Review Branch
 
-## Review branch
+## Published changes
+- Revised main README and learning roadmap.
+- Added project index and privacy-focused gitignore.
+- Added original source for Tutorial 02 Question 1 (array search) and Tutorial 06 Question 1 (Book/TextBook inheritance).
+- Added explicit README notes for known limitations, and separate minimal .NET 8 project files for build review.
+- Existing HourlyWorkerOOP remains in its original location.
+- GitHub Actions build matrix now targets the three published projects.
 
-This branch contains documentation improvements and an automated .NET 8 build workflow for the existing HourlyWorkerOOP project.
+## Important limitations
+- The remaining 20 projects from the prepared 23-project collection are **not yet uploaded**.
+- The original tutorials include legacy .NET Framework and Windows Forms projects that may need Windows tooling and individual compatibility review.
+- Build success does not establish passing runtime tests.
+- The original student source must not be silently rewritten. Corrective versions should be clearly identified when added.
+- The previous basic privacy scan of the prepared archive does not guarantee that all files are safe for publication.
 
-## Submitted coursework archive audit
-
-- 34 ZIP uploads reduced to 9 unique ZIP collections.
-- 23 Visual Studio projects identified, 187 organized files total in the offline prepared archive.
-- PDF handouts and unrelated Word assignments were excluded from the source-code package.
-- A basic case-insensitive scan of 187 packaged files found no student number, surname, email addresses, common local Windows user paths or obvious embedded secret assignment patterns. This is not a comprehensive privacy audit.
-- No .NET SDK is installed in the local workspace, so independent builds could not be executed here.
-- The remaining 22 project solutions have not been published to GitHub as of this release note.
-
-## Do not merge until
-
-1. GitHub Actions shows the existing .NET 8 build passing.
-2. The remaining source projects are moved from the prepared archive into this branch and individual diffs are inspected.
-3. All project compatibility concerns (especially .NET Framework / Windows Forms) are documented and verified.
-4. User-specific details, lecturer handouts and generated binaries are absent.
-
-Documentation additions are AI-assisted; original authored student source remains distinguished from it.
+Keep this pull request in draft until the project set and final quality gates have been reviewed.
