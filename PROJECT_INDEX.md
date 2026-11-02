@@ -35,3 +35,5 @@
 | [02-Object-Oriented-Programming/Tutorial-06/Question-01](modernized/02-Object-Oriented-Programming/Tutorial-06/Question-01/) | .NET 8 | PASS |
 | [02-Object-Oriented-Programming/Tutorial-06/Question-02](modernized/02-Object-Oriented-Programming/Tutorial-06/Question-02/) | .NET 8 | PASS |
 | [HourlyWorkerOOP](modernized/HourlyWorkerOOP/) | .NET 8 | PASS |
+
+Build results and run evidence: [verification report](VERIFICATION_AND_PUBLICATION_REPORT.md). Formative 04 and 05 also pass the separate temporary-copy redaction compatibility builds; their exact archive builds remain failed.
