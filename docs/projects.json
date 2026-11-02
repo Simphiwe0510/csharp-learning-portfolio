@@ -1,0 +1,134 @@
+[
+  {
+    "path": "originals/01-Programming-Fundamentals/Tutorial-02/Question 1/Question 1.csproj",
+    "title": "Array search",
+    "key": "Tutorial-02/Question 1",
+    "gui": false
+  },
+  {
+    "path": "originals/01-Programming-Fundamentals/Tutorial-02/Question 2/Question 2.csproj",
+    "title": "Stock values",
+    "key": "Tutorial-02/Question 2",
+    "gui": false
+  },
+  {
+    "path": "originals/01-Programming-Fundamentals/Tutorial-02/Question 3/Question 3.csproj",
+    "title": "Floor revenue",
+    "key": "Tutorial-02/Question 3",
+    "gui": false
+  },
+  {
+    "path": "originals/02-Object-Oriented-Programming/Formative-04/Formative4.csproj",
+    "title": "Rectangle and Box",
+    "key": "Formative-04",
+    "gui": false
+  },
+  {
+    "path": "originals/02-Object-Oriented-Programming/Tutorial-06/Question 1/Question 1.csproj",
+    "title": "Book and TextBook",
+    "key": "Tutorial-06/Question 1",
+    "gui": false
+  },
+  {
+    "path": "originals/02-Object-Oriented-Programming/Tutorial-06/Question 2/Question 2.csproj",
+    "title": "Vehicle and Car",
+    "key": "Tutorial-06/Question 2",
+    "gui": false
+  },
+  {
+    "path": "originals/02-Object-Oriented-Programming/Tutorial-06/Question 3/Question 3.csproj",
+    "title": "Square and Cube",
+    "key": "Tutorial-06/Question 3",
+    "gui": false
+  },
+  {
+    "path": "originals/02-Object-Oriented-Programming/Tutorial-06/Question 4/Question 4.csproj",
+    "title": "Circle and Sphere",
+    "key": "Tutorial-06/Question 4",
+    "gui": false
+  },
+  {
+    "path": "originals/02-Object-Oriented-Programming/Tutorial-06/Question 5/Question 5.csproj",
+    "title": "Order and ShippedOrder",
+    "key": "Tutorial-06/Question 5",
+    "gui": false
+  },
+  {
+    "path": "originals/03-Exception-Handling/Formative-05/Formative5.csproj",
+    "title": "Product validation",
+    "key": "Formative-05",
+    "gui": false
+  },
+  {
+    "path": "originals/03-Exception-Handling/Tutorial-08/Question 1/Question 1.csproj",
+    "title": "Score lookup",
+    "key": "Tutorial-08/Question 1",
+    "gui": false
+  },
+  {
+    "path": "originals/03-Exception-Handling/Tutorial-08/Question 2/Question 2.csproj",
+    "title": "Inventory total",
+    "key": "Tutorial-08/Question 2",
+    "gui": false
+  },
+  {
+    "path": "originals/03-Exception-Handling/Tutorial-08/Question 3/Question 3.csproj",
+    "title": "Numeric division",
+    "key": "Tutorial-08/Question 3",
+    "gui": false
+  },
+  {
+    "path": "originals/03-Exception-Handling/Tutorial-08/Question 4/Question 4.csproj",
+    "title": "Course validation",
+    "key": "Tutorial-08/Question 4",
+    "gui": false
+  },
+  {
+    "path": "originals/04-File-Handling/Tutorial-09/Question 1/Question 1.csproj",
+    "title": "Movie file",
+    "key": "Tutorial-09/Question 1",
+    "gui": false
+  },
+  {
+    "path": "originals/04-File-Handling/Tutorial-09/Question 3/Question 3.csproj",
+    "title": "Word search",
+    "key": "Tutorial-09/Question 3",
+    "gui": false
+  },
+  {
+    "path": "originals/04-File-Handling/Tutorial-09/Question 4/Question 4.csproj",
+    "title": "Student records",
+    "key": "Tutorial-09/Question 4",
+    "gui": false
+  },
+  {
+    "path": "originals/05-Windows-Forms/Tutorial-10/Question 1/Question 1.csproj",
+    "title": "Payment schedule",
+    "key": "Tutorial-10/Question 1",
+    "gui": true
+  },
+  {
+    "path": "originals/05-Windows-Forms/Tutorial-10/Question 2/Question 2.csproj",
+    "title": "Pizza calculator",
+    "key": "Tutorial-10/Question 2",
+    "gui": true
+  },
+  {
+    "path": "originals/06-Assessments-and-Projects/Summative-Project/Question 1/Question 1.csproj",
+    "title": "Gym vouchers",
+    "key": "Summative-Project/Question 1",
+    "gui": false
+  },
+  {
+    "path": "originals/06-Assessments-and-Projects/Summative-Project/Question 2/Question 2.csproj",
+    "title": "Corporate subscribers",
+    "key": "Summative-Project/Question 2",
+    "gui": false
+  },
+  {
+    "path": "originals/06-Assessments-and-Projects/Summative-Project/Question 3/Question 3.csproj",
+    "title": "Veterinary bill",
+    "key": "Summative-Project/Question 3",
+    "gui": true
+  }
+]

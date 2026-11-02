@@ -16,3 +16,9 @@ Thumbs.db
 .env.*
 *.pfx
 *.snk
+
+# Verification outputs and exercise runtime data
+/build-results/
+**/movies.txt
+**/story.txt
+**/students.txt

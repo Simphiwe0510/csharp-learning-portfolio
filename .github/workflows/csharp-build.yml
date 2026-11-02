@@ -1,26 +1,71 @@
 name: C# coursework build verification
 on:
   push:
-    branches: [main, portfolio-2025-reviewed]
+    branches: [main, portfolio-complete-2025]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
 jobs:
-  build:
+  archive-integrity:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        project:
-          - HourlyWorkerOOP/AbstractWorker.csproj
-          - 01-Programming-Fundamentals/Tutorial-02/Question-01/Question01.csproj
-          - 02-Object-Oriented-Programming/Tutorial-06/Question-01/Question01.csproj
-          - 02-Object-Oriented-Programming/Tutorial-06/Question-02/Question02.csproj
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/verify_archive.py
+  original-framework-builds:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: microsoft/setup-msbuild@v2
+      - name: Build all 22 archive projects independently
+        run: python scripts/build.py originals
+      - name: Upload every archive build result and log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-framework-build-results
+          path: build-results/originals/
+  redaction-compatibility:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: microsoft/setup-msbuild@v2
+      - name: Build temporary namespace-repaired formative copies
+        run: python scripts/build_redaction_compatibility.py
+      - name: Confirm archive remains unchanged
+        if: always()
+        run: python scripts/verify_archive.py
+      - name: Upload compatibility build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: redaction-compatibility-results
+          path: build-results/redaction-compatibility/
+  modernized-builds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
-      - name: Restore
-        run: dotnet restore "${{ matrix.project }}"
-      - name: Build
-        run: dotnet build "${{ matrix.project }}" --no-restore --configuration Release
+      - name: Build all four existing modernized projects independently
+        run: python scripts/build.py modernized
+      - name: Upload every modernized build result and log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: modernized-build-results
+          path: build-results/modernized/
