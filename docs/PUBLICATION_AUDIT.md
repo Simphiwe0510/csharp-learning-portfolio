@@ -9,3 +9,5 @@ The ZIP contains no PDFs, Word handouts, bin/obj/.vs folders or binaries. Root Z
 The reviewed ZIP already replaces student IDs with [STUDENT_ID_REDACTED]. This creates invalid C# namespaces in Formative 04 and 05. Those exact sources remain as evidence of the supplied archive. Compiler failures are documented rather than silently changing coursework. No claim is made that these placeholders were in the student's original submission.
 
 Build tooling was absent in the local Linux environment (dotnet, msbuild and mono). Automated compilation therefore uses GitHub-hosted Windows MSBuild for all originals and Ubuntu .NET 8 for all modernized projects. Every project is attempted even when another fails. See the verification report for actual run evidence.
+
+The archive uses mixed LF/CRLF line endings. `.gitattributes` marks originals/** as non-normalizing (`-text`) so Windows checkouts retain the reviewed bytes. This fixes a checkout configuration defect found by Windows integrity verification; it does not alter source content. The temporary redaction compatibility helper changes only the namespace placeholder in disposable copies.
