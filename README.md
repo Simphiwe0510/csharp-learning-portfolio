@@ -1,30 +1,22 @@
 # C# Learning Portfolio | University of Johannesburg
 
-Welcome! I'm an Information Systems student at the University of Johannesburg documenting my **2025 C# programming learning journey**. This repository presents coursework I wrote, along with clearly identified documentation and compatibility improvements.
+2025 C# coursework covering arrays, inheritance, exceptions, file handling and Windows Forms.
 
-## Explore the projects
+All **22 projects in the reviewed coursework ZIP** are published under [originals](originals/). The four previously published .NET 8 projects are retained under [modernized](modernized/). These represent **23 distinct exercises**, with three archive/modernized pairs and one existing HourlyWorkerOOP exercise.
 
-| Project | Learning concepts | Status |
-| --- | --- | --- |
-| [HourlyWorkerOOP](HourlyWorkerOOP/) | Abstract classes, inheritance, pay calculations, validation | Original project; .NET 8 build passed |
-| [Tutorial 02 — Array Search](01-Programming-Fundamentals/Tutorial-02/Question-01/) | Arrays, random numbers, loops and linear search | Original source published; build verification in progress |
-| [Tutorial 06 — Vehicle and Car](02-Object-Oriented-Programming/Tutorial-06/Question-02/) | Base and derived classes, overriding | Source published; build verification in progress |
-| [Tutorial 06 — Book and TextBook](02-Object-Oriented-Programming/Tutorial-06/Question-01/) | Constructors, classes, inheritance, method overriding | Original source published; known issue documented |
+- [Complete project index](PROJECT_INDEX.md)
+- [Build and verification report](VERIFICATION_AND_PUBLICATION_REPORT.md)
+- [Source preservation and publication audit](docs/PUBLICATION_AUDIT.md)
+- [Learning roadmap](LEARNING_ROADMAP.md)
 
-The broader submitted coursework covers string operations, exception handling, file manipulation and Windows Forms, but **the other 19 projects are not yet published**.
+## Build and run
 
-## [Learning roadmap](LEARNING_ROADMAP.md) · [Project index](PROJECT_INDEX.md) · [Release notes](RELEASE_NOTES.md)
+Original projects target .NET Framework 4.7.2. Use Windows, Visual Studio or Build Tools with MSBuild and the 4.7.2 developer pack. Each exercise has a solution and README. The three Windows Forms applications require Windows for execution.
 
-## Tools and technologies
+The existing modernized versions target .NET 8. Run `dotnet build --configuration Release` and `dotnet run` from an individual modernized project directory. Console exercises may require an interactive terminal.
 
-C# · .NET · Visual Studio · GitHub Actions
+GitHub Actions checks every project independently and uploads per-project build logs. Known archive failures are reported explicitly; a published project is not automatically a passing project. See the verification report for observed outcomes. A build pass is not a functional test or GUI test.
 
-## Running the exercises
+## Authenticity
 
-The listed projects have individual README files. Use an appropriate .NET SDK and run `dotnet build` followed by `dotnet run` for console applications. Some exercises use `Console.ReadKey()` and need an interactive terminal.
-
-Build checks are automated for the published projects. A successful build does **not** mean all possible inputs or program behaviors have been tested.
-
-## Academic integrity
-
-All original coursework solutions are distinguished from added documentation and project compatibility files prepared with AI assistance. No company employment, professional certifications, or production-level experience are claimed. Lecturer handouts and assessment instructions are not presented as personally authored source code.
+The `originals/` source, project files and resources match the reviewed ZIP byte for byte. That ZIP was already sanitized and is not a pristine copy of the original assessment submissions. In particular, two formative projects contain invalid redacted namespaces. Existing modernized source differs from the archive and is labelled separately. Documentation and automation were prepared with AI assistance; no missing solutions were invented. Lecturer handouts, private data, generated binaries and editor state are excluded.
