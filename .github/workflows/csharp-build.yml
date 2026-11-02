@@ -32,6 +32,25 @@ jobs:
         with:
           name: original-framework-build-results
           path: build-results/originals/
+  redaction-compatibility:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: microsoft/setup-msbuild@v2
+      - name: Build temporary namespace-repaired formative copies
+        run: python scripts/build_redaction_compatibility.py
+      - name: Confirm archive remains unchanged
+        if: always()
+        run: python scripts/verify_archive.py
+      - name: Upload compatibility build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: redaction-compatibility-results
+          path: build-results/redaction-compatibility/
   modernized-builds:
     runs-on: ubuntu-latest
     steps:

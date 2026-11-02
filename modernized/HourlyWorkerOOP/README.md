@@ -1,5 +1,7 @@
 # Hourly Worker OOP
 
+> Existing .NET 8 portfolio version, moved from the previous repository layout. It is separate from the reviewed .NET Framework archive under `originals/`; source and project files were not changed during this import.
+
 A C# console application created as a learning project to practise object-oriented programming concepts.
 
 ## What the Project Does

@@ -20,3 +20,5 @@ GitHub Actions checks every project independently and uploads per-project build 
 ## Authenticity
 
 The `originals/` source, project files and resources match the reviewed ZIP byte for byte. That ZIP was already sanitized and is not a pristine copy of the original assessment submissions. In particular, two formative projects contain invalid redacted namespaces. Existing modernized source differs from the archive and is labelled separately. Documentation and automation were prepared with AI assistance; no missing solutions were invented. Lecturer handouts, private data, generated binaries and editor state are excluded.
+
+A [separate compatibility helper](docs/REDACTION_COMPATIBILITY.md) builds temporary namespace-repaired copies of Formative 04 and 05 without changing the archive. Its results are distinguished from original builds.

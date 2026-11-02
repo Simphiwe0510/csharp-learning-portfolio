@@ -17,3 +17,5 @@ Build results are recorded in the root verification report and GitHub Actions. C
 ## Known limitations from source review
 
 The reviewed ZIP contains an invalid namespace with the literal [STUDENT_ID_REDACTED] placeholder. This is a sanitization defect in the supplied archive; it is preserved here, not attributed to the original student submission. Compilation is expected to fail. Box.isSquare() checks length against height only.
+
+A separate temporary-copy namespace repair is available: see [redaction compatibility instructions](../../../docs/REDACTION_COMPATIBILITY.md). It does not modify these archive files or repair application logic.

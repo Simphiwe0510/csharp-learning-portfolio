@@ -17,3 +17,5 @@ Build results are recorded in the root verification report and GitHub Actions. C
 ## Known limitations from source review
 
 The reviewed ZIP contains an invalid namespace with the literal [STUDENT_ID_REDACTED] placeholder. This sanitization defect is preserved; compilation is expected to fail. The parameterized Product constructor validates without assigning its fields, and discount validation happens after dividing by 100.
+
+A separate temporary-copy namespace repair is available: see [redaction compatibility instructions](../../../docs/REDACTION_COMPATIBILITY.md). It does not modify these archive files or repair application logic.
